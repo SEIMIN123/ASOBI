@@ -1,0 +1,81 @@
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .body1 {
+  width: 40vw;
+  height: 80vh;
+  background-color: #d9d9d9;
+  border-radius: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .body2 {
+  width: 35vw;
+  height: 70vh;
+  border-radius: 30px;
+  background-color: #808080;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+#root .body3 {
+  width: 7vw;
+  height: 12vh;
+  margin-left: -23vw;
+  margin-bottom: -20vh;
+  position: absolute;
+  border-radius: 20px;
+  background-color: #454545;
+}
+
+#root .body4 {
+  width: 7vw;
+  height: 12vh;
+  margin-right: -23vw;
+  margin-bottom: -20vh;
+  border-radius: 20px;
+  position: absolute;
+  background-color: #454545;
+}
+
+#root .body5 {
+  width: 12vw;
+  height: 12vh;
+  position: absolute;
+  border-radius: 20px;
+  margin-bottom: -20vh;
+  background-color: #a1a1a1;
+}
