@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="pic.css">
+</head>
+
+<body>
+  <div id="root">
+    <div class="box1">WHIFLASH</div>
+    <div class="box2"></div>
+    <div class="box3">
+      <img src="./pic/img.png">
+    </div>
+  </div>
+
+  <script>
+    const root = document.getElementById('root');
+    const togle = document.querySelector('.box1');
+
+    let data = true;
+
+    togle.addEventListener('click', () => {
+
+      if (data === true) {
+
+        data = false;
+
+        togle.style.transition = "4s";
+        togle.style.opacity = "1";
+        togle.style.zIndex = "2";
+        togle.style.transform = "translateY(-28vh)";
+
+
+      } else {
+
+        data = true;
+
+        togle.style.transition = "4s";
+        togle.style.opacity = "0";
+        togle.style.transform = "translateY(0vh)";
+
+
+      }
+    });
+  </script>
+</body>
+
+</html>
