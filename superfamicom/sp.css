@@ -237,7 +237,7 @@
   width: 55vw;
   height: 55vh;
   position: absolute;
-  margin-bottom: -220vh;
+  margin-bottom: -230vh;
   background: url(../superfamicom/pic/superlogo.png);
   background-size: contain;
   background-position: center center;
@@ -304,31 +304,257 @@
   position: absolute;
 }
 
-.line-3 {
-  width: 1vw;
-  height: 50vh;
-  margin-left: -15vw;
-  margin-top: -20vh;
-  background-color: #272727;
-  position: absolute;
-}
-
-.line-4 {
-  width: 1vw;
-  height: 50vh;
-  margin-right: -15vw;
-  margin-top: -20vh;
-  background-color: #272727;
-  position: absolute;
-}
-
 .swi {
-  width: 55vw;
+  width: 40vw;
   height: 55vh;
-  margin-bottom: -60vh;
+  margin-top: -10vh;
   background: url(./pic/swi.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
+}
+
+.wifi {
+  width: 30vw;
+  height: 40vh;
+  margin-bottom: -70vh;
+  background: url(./pic/fa-solid_wifi.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
+}
+
+.body-1 {
+  width: 40vw;
+  height: 50vh;
+  margin-bottom: -170vh;
+  background-color: #323639;
+  -webkit-box-shadow: 0px 10px 10px #666666;
+          box-shadow: 0px 10px 10px #666666;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.body-2 {
+  width: 37vw;
+  height: 45vh;
+  background: url(./pic/zelda.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.left {
+  width: 9vw;
+  height: 50vh;
+  background-color: #00c4e4;
+  margin-left: -49.3vw;
+  margin-bottom: -170vh;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  -webkit-box-shadow: 0px 10px 10px #666666;
+          box-shadow: 0px 10px 10px #666666;
+  position: absolute;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.cir-1 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-right: -4vw;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-2 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-left: -4vw;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-3 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -4vw;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-4 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  position: absolute;
+  margin-bottom: -4vw;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-5 {
+  width: 3vw;
+  height: 6vh;
+  border-radius: 100%;
+  position: absolute;
+  margin-top: -15vw;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.rect-1 {
+  width: 2vw;
+  height: 4vh;
+  margin-right: -4vw;
+  margin-bottom: -15vw;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.minus {
+  width: 2vw;
+  height: 1vh;
+  margin-right: -5vw;
+  margin-top: -22vw;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.right {
+  width: 9vw;
+  height: 50vh;
+  background-color: #ff6559;
+  margin-right: -49.3vw;
+  margin-bottom: -170vh;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  -webkit-box-shadow: 0px 10px 10px #666666;
+          box-shadow: 0px 10px 10px #666666;
+  position: absolute;
+}
+
+.cir-6 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-left: 3vw;
+  margin-top: 9vh;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-7 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-left: 3vw;
+  margin-top: 17vh;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-8 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-left: 5vw;
+  margin-top: 13vh;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-9 {
+  width: 2vw;
+  height: 4vh;
+  border-radius: 100%;
+  margin-left: 1vw;
+  margin-top: 13vh;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.cir-10 {
+  width: 3vw;
+  height: 6vh;
+  border-radius: 100%;
+  margin-left: 2.5vw;
+  margin-top: 26vh;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.rect-2 {
+  width: 2vw;
+  height: 4vh;
+  margin-left: 1.5vw;
+  margin-top: 19vw;
+  border-radius: 100%;
+  position: absolute;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
+}
+
+.plus {
+  width: 2vw;
+  height: 1vh;
+  margin-left: 1vw;
+  margin-top: 1.5vw;
+  position: absolute;
+  z-index: 1;
+  background-color: #3d3f4a;
+}
+
+.plus-1 {
+  width: 0.5vw;
+  height: 3.5vh;
+  margin-left: 1.75vw;
+  margin-top: 0.9vw;
+  position: relative;
+  z-index: 0;
+  background-color: #3d3f4a;
+  -webkit-box-shadow: 2px 3px 1px 0px #666666;
+          box-shadow: 2px 3px 1px 0px #666666;
 }
