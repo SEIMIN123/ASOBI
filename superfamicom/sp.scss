@@ -18,57 +18,292 @@
 #root {
 
   width: 100vw;
-  height: 100vh;
+  height: 400vh;
   @include flex(flex, center, center);
 
   .body1 {
 
     width: 40vw;
-    height: 80vh;
+    height: 82vh;
     background-color: #d9d9d9;
     border-radius: 30px;
+    margin-top: -300vh;
+    box-shadow: 0px 5px 5px 0px rgb(102, 102, 102);
+    position: absolute;
+    z-index: 2;
     @include flex(flex, center, center);
+  }
+
+  .splogo {
+
+    width: 5vw;
+    height: 5vh;
+    position: absolute;
+    margin-top: -65vh;
+    margin-right: -28vw;
+    background: url(../superfamicom/pic/logo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
   }
 
   .body2 {
 
     width: 35vw;
-    height: 70vh;
+    height: 65vh;
     border-radius: 30px;
+    margin-top: -9vh;
     background-color: #808080;
     @include flex(flex, center, center);
+  }
 
+  .pack {
+
+    width: 28vw;
+    height: 8vh;
+    background-color: #b5b5b5;
+    margin-top: -35vh;
+    border-top-left-radius: 50px;
+    border-top-right-radius: 50px;
+    border-bottom-left-radius: 25vw;
+    border-bottom-right-radius: 25vw;
+    box-shadow: 0px 5px 5px rgb(102, 102, 102);
   }
 
   .body3 {
 
     width: 7vw;
-    height: 12vh;
+    height: 15vh;
     margin-left: -23vw;
     margin-bottom: -20vh;
     position: absolute;
     border-radius: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 10px 10px rgb(44, 44, 44);
+    @include flex(flex, center, center);
+
+  }
+
+  .body3-1 {
+
+    width: 6vw;
+    height: 13vh;
+    position: absolute;
+    border-radius: 20px;
     background-color: #454545;
+    @include flex(flex, center, center);
+
+  }
+
+  .power1 {
+
+    width: 5vw;
+    height: 2vh;
+    position: absolute;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 5px 5px rgb(7, 7, 7);
+
+  }
+
+  .powertext {
+
+    font-size: 1vw;
+    margin-bottom: -7vh;
+    position: absolute;
+    color: #fff;
+
   }
 
   .body4 {
 
     width: 7vw;
-    height: 12vh;
+    height: 15vh;
     margin-right: -23vw;
     margin-bottom: -20vh;
-    border-radius: 20px;
     position: absolute;
+    border-radius: 20px;
+    background-color: #d9d9d9;
+    box-shadow: 0px 10px 10px rgb(44, 44, 44);
+    @include flex(flex, center, center);
+  }
+
+  .body4-1 {
+
+    width: 6vw;
+    height: 13vh;
+    position: absolute;
+    border-radius: 20px;
     background-color: #454545;
+    @include flex(flex, center, center);
+  }
+
+  .reset {
+
+    font-size: 1vw;
+    margin-bottom: -7vh;
+    position: absolute;
+    color: #fff;
   }
 
   .body5 {
 
     width: 12vw;
-    height: 12vh;
+    height: 10vh;
     position: absolute;
-    border-radius: 20px;
-    margin-bottom: -20vh;
+    border-radius: 10px;
+    margin-bottom: -23vh;
     background-color: #a1a1a1;
+    box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    @include flex(flex, center, center);
+
   }
+
+  .eject {
+    font-size: 1.2vw;
+    margin-bottom: -4vh;
+    position: absolute;
+    color: #fff;
+
+  }
+
+  .nintendo {
+
+    width: 6vw;
+    height: 5vh;
+    position: absolute;
+    margin-bottom: -70vh;
+    margin-left: -28vw;
+    background: url(../superfamicom/pic/nin.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .super {
+
+    width: 20vw;
+    height: 4vh;
+    position: absolute;
+    margin-bottom: -79vh;
+    margin-left: -26vw;
+    background: url(../superfamicom/pic/super.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+  .famicom {
+
+    width: 55vw;
+    height: 55vh;
+    position: absolute;
+    margin-bottom: -220vh;
+    background: url(../superfamicom/pic/superlogo.png);
+    background-size: contain;
+    background-position: center center;
+    background-repeat: no-repeat;
+  }
+
+
+  .control-1 {
+
+    width: 10vw;
+    height: 10vh;
+    margin-left: -15vw;
+    margin-top: -215vh;
+    border-radius: 15px;
+    background-color: #3d3d3d;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .control-1-1 {
+
+    width: 6vw;
+    height: 5vh;
+    margin-left: -15vw;
+    margin-top: -205vh;
+    border-radius: 10px;
+    background-color: #272727;
+    position: absolute;
+  }
+
+  .line-1 {
+
+    width: 1vw;
+    height: 50vh;
+    margin-left: -15vw;
+    margin-top: -150vh;
+    background-color: #272727;
+    position: absolute;
+  }
+
+  .control-2 {
+
+    width: 10vw;
+    height: 10vh;
+    margin-right: -15vw;
+    margin-top: -215vh;
+    border-radius: 15px;
+    background-color: #3d3d3d;
+    position: absolute;
+    z-index: 1;
+  }
+
+  .control-2-1 {
+
+    width: 6vw;
+    height: 5vh;
+    margin-right: -15vw;
+    margin-top: -205vh;
+    border-radius: 10px;
+    background-color: #272727;
+    position: absolute;
+
+  }
+
+  .line-2 {
+
+    width: 1vw;
+    height: 50vh;
+    margin-right: -15vw;
+    margin-top: -150vh;
+    background-color: #272727;
+    position: absolute;
+  }
+}
+
+//-----------------------------------------------------------------
+
+.line-3 {
+
+  width: 1vw;
+  height: 50vh;
+  margin-left: -15vw;
+  margin-top: -20vh;
+  background-color: #272727;
+  position: absolute;
+}
+
+.line-4 {
+
+  width: 1vw;
+  height: 50vh;
+  margin-right: -15vw;
+  margin-top: -20vh;
+  background-color: #272727;
+  position: absolute;
+}
+
+.swi {
+
+  width: 55vw;
+  height: 55vh;
+  margin-bottom: -60vh;
+  background: url(./pic/swi.png);
+  background-size: contain;
+  background-position: center center;
+  background-repeat: no-repeat;
+  position: absolute;
 }
