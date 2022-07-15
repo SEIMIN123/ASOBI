@@ -7,6 +7,9 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
   <link rel="stylesheet" href="sp.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Yuji+Boku&display=swap" rel="stylesheet">
 </head>
 
 <body>
@@ -28,6 +31,7 @@
           <div class="body3-1">
             <div class="power1"></div>
             <h3 class="powertext">POWER</h3>
+            <div class="light"></div>
           </div>
         </div>
         <div class="body4">
@@ -46,38 +50,117 @@
         <div class="super"></div>
       </div>
     </div>
-
+<link rel="stylesheet" href="./pic/superlogo.png">
     <!------------------------------------------------------------>
 
     <div class="swi"></div>
-    <div class="wifi"></div>
+    <!-- <div class="wifi"></div> -->
     <div class="body-1">
       <div class="body-2"></div>
     </div>
+    <div class="leftbtn"></div>
     <div class="left">
-        <div class="cir-1"></div>
-        <div class="cir-2"></div>
-        <div class="cir-3"></div>
-        <div class="cir-4"></div>
-        <div class="cir-5"></div>
-        <div class="rect-1"></div>
-        <div class="minus"></div>
+      <div class="cir-1"></div>
+      <div class="cir-2"></div>
+      <div class="cir-3"></div>
+      <div class="cir-4"></div>
+      <div class="cir-5"></div>
+      <div class="rect-1"></div>
+      <div class="minus"></div>
     </div>
+    <div class="rightbtn"></div>
     <div class="right">
-        <div class="cir-6"></div>
-        <div class="cir-7"></div>
-        <div class="cir-8"></div>
-        <div class="cir-9"></div>
-        <div class="cir-10"></div>
-        <div class="rect-2"></div>
-        <div class="plus"></div>
-        <div class="plus-1"></div>
-
-
+      <div class="cir-6">X</div>
+      <div class="cir-7">B</div>
+      <div class="cir-8">A</div>
+      <div class="cir-9">Y</div>
+      <div class="cir-10"></div>
+      <div class="rect-2"></div>
+      <div class="plus"></div>
+      <div class="plus-1"></div>
     </div>
+    <div class="next">次のコンソールは？</div>
   </div>
 
   <script>
+    const next = document.querySelector('.next');
+    const move = next.children;
+    let move1 = [{
+        transform: 'translateY(-40px)'
+      },
+      {
+        transform: 'translateY(10px)'
+      },
+      {
+        transform: 'translateY(-40px)'
+      }
+    ];
+
+    let move2 = {
+      duration: 1500,
+      interations: Infinity
+    };
+
+    setInterval(() => {
+
+      next.animate(move1, move2);
+    }, 1500);
+
+    //-----------------------------------------------------------
+    const root = document.getElementById('root');
+    const power = document.querySelector('.power1');
+    const light = document.querySelector('.light');
+    const famicom = document.querySelector('.famicom');
+
+    let data = true;
+    power.addEventListener('click', () => {
+
+      if (data === true) {
+        data = false;
+        power.style.transform = "translateY(-30px)";
+        power.style.transition = "0.3s";
+        light.style.backgroundColor = "#D25050";
+        famicom.style.transition = "1s";
+        famicom.style.opacity = "0";
+
+        console.log(power);
+
+      } else {
+        data = true;
+        power.style.transform = "translateY(0px)";
+        power.style.transition = "0.3s";
+        light.style.backgroundColor = "#585858";
+        famicom.style.transition = "1s";
+        famicom.style.opacity = "1";
+
+        console.log(light);
+        
+      }
+    });
+
+
+    const abtn = document.querySelector('.cir-8');
+    const swi = document.querySelector('.swi');
+
+    let data1 = true;
+    abtn.addEventListener('click', () => {
+
+      if (data1 === true) {
+        data1 = false;
+        swi.style.opacity = "0";
+        swi.style.transition = "1s";
+
+        console.log(power);
+
+      } else {
+        data1 = true;
+        swi.style.opacity = "1";
+        swi.style.transition = "1s";
+
+        console.log(light);
+        
+      }
+    });
 
   </script>
 </body>

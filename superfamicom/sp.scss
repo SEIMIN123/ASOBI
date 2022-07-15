@@ -15,10 +15,20 @@
   border: 1px solid black;
 }
 
+  body::-webkit-scrollbar {
+
+    width: 0;
+    display: none;
+  }
 #root {
 
   width: 100vw;
   height: 400vh;
+  background: url(./pic/back5.jpg);
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
   @include flex(flex, center, center);
 
   .body1 {
@@ -68,6 +78,13 @@
     border-bottom-left-radius: 25vw;
     border-bottom-right-radius: 25vw;
     box-shadow: 0px 5px 5px rgb(102, 102, 102);
+  }
+
+  .pack:active {
+
+    transition: 0.2s;
+    box-shadow: 0 5px rgb(58, 57, 57);
+    transform: translateY(15px);
   }
 
   .body3 {
@@ -128,6 +145,13 @@
     @include flex(flex, center, center);
   }
 
+  .body4:active {
+
+    transition: 0.2s;
+    box-shadow: 0 5px rgb(58, 57, 57);
+    transform: translateY(1px);
+  }
+
   .body4-1 {
 
     width: 6vw;
@@ -155,8 +179,16 @@
     margin-bottom: -23vh;
     background-color: #a1a1a1;
     box-shadow: 0px 10px 10px rgb(102, 102, 102);
+    border: 0;
     @include flex(flex, center, center);
 
+  }
+
+  .body5:active {
+
+    transition: 0.2s;
+    box-shadow: 0 5px rgb(58, 57, 57);
+    transform: translateY(10px);
   }
 
   .eject {
@@ -165,6 +197,17 @@
     position: absolute;
     color: #fff;
 
+  }
+
+  .light {
+
+    width: 2vw;
+    height: 2vh;
+    position: absolute;
+    margin-bottom: -57vh;
+    margin-right: -46vw;
+    border-radius: 10px;
+    background-color: #585858;
   }
 
   .nintendo {
@@ -196,9 +239,9 @@
   .famicom {
 
     width: 55vw;
-    height: 55vh;
+    height: 35vh;
     position: absolute;
-    margin-bottom: -230vh;
+    margin-bottom: -167vh;
     background: url(../superfamicom/pic/superlogo.png);
     background-size: contain;
     background-position: center center;
@@ -232,9 +275,9 @@
   .line-1 {
 
     width: 1vw;
-    height: 50vh;
+    height: 20vh;
     margin-left: -15vw;
-    margin-top: -150vh;
+    margin-top: -189vh;
     background-color: #272727;
     position: absolute;
   }
@@ -266,9 +309,9 @@
   .line-2 {
 
     width: 1vw;
-    height: 50vh;
+    height: 20vh;
     margin-right: -15vw;
-    margin-top: -150vh;
+    margin-top: -189vh;
     background-color: #272727;
     position: absolute;
   }
@@ -279,27 +322,30 @@
 .swi {
 
   width: 40vw;
-  height: 55vh;
-  margin-top: -10vh;
+  height: 40vh;
+  margin-bottom: -70vh;
+  border-radius: 50px;
   background: url(./pic/swi.png);
   background-size: contain;
   background-position: center center;
   background-repeat: no-repeat;
   position: absolute;
+  @include flex(flex,center,center);
 }
 
-.wifi {
+// .wifi {
 
-  width: 30vw;
-  height: 40vh;
-  margin-bottom: -70vh;
-  background: url(./pic/fa-solid_wifi.png);
-  background-size: contain;
-  background-position: center center;
-  background-repeat: no-repeat;
-  position: absolute;
+//   width: 19vw;
+//   height: 29vh;
+//   margin-bottom: -60vh;
+//   border-radius: 50px;
+//   background: url(./pic/fa-solid_wifi.png);
+//   background-size: contain;
+//   background-position: center center;
+//   background-repeat: no-repeat;
+//   position: absolute;
 
-}
+// }
 
 .body-1 {
 
@@ -332,7 +378,22 @@
   border-bottom-left-radius: 100px;
   box-shadow: 0px 10px 10px rgb(102, 102, 102);
   position: absolute;
-  @include flex(flex,center,center);
+  z-index: 10;
+  @include flex(flex, center, center);
+}
+
+.leftbtn {
+
+  width: 9vw;
+  height: 30vh;
+  background-color: #434340;
+  margin-bottom: -150vh;
+  margin-left: -49.3vw;
+  margin-top: -2vh;
+  border-top-left-radius: 100px;
+  border-bottom-left-radius: 100px;
+  position: absolute;
+  z-index: 2;
 }
 
 .cir-1 {
@@ -343,7 +404,15 @@
   margin-right: -4vw;
   position: absolute;
   background-color: #3d3f4a;
+  z-index: 9;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.cir-1:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-2 {
@@ -354,7 +423,15 @@
   margin-left: -4vw;
   position: absolute;
   background-color: #3d3f4a;
+  z-index: 8;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.cir-2:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-3 {
@@ -365,7 +442,15 @@
   position: absolute;
   margin-top: -4vw;
   background-color: #3d3f4a;
+  z-index: 7;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.cir-3:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-4 {
@@ -376,7 +461,15 @@
   position: absolute;
   margin-bottom: -4vw;
   background-color: #3d3f4a;
+  z-index: 6;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.cir-4:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-5 {
@@ -387,6 +480,7 @@
   position: absolute;
   margin-top: -15vw;
   background-color: #3d3f4a;
+  z-index: 5;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
 }
 
@@ -398,7 +492,15 @@
   margin-bottom: -15vw;
   position: absolute;
   background-color: #3d3f4a;
+  z-index: 4;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.rect-1:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .minus {
@@ -409,7 +511,15 @@
   margin-top: -22vw;
   position: absolute;
   background-color: #3d3f4a;
+  z-index: 3;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+}
+
+.minus:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 //------------------------------------------------------------------
@@ -425,7 +535,23 @@
   border-bottom-right-radius: 100px;
   box-shadow: 0px 10px 10px rgb(102, 102, 102);
   position: absolute;
+  z-index: 10;
 }
+
+.rightbtn {
+
+  width: 9vw;
+  height: 30vh;
+  background-color: #434340;
+  margin-bottom: -150vh;
+  margin-right: -49.3vw;
+  margin-top: -2vh;
+  border-top-right-radius: 100px;
+  border-bottom-right-radius: 100px;
+  position: absolute;
+  z-index: 1;
+}
+
 .cir-6 {
 
   width: 2vw;
@@ -436,6 +562,16 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 9;
+  color: #fff;
+  @include flex(flex, center, center);
+}
+
+.cir-6:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-7 {
@@ -448,6 +584,16 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 8;
+  color: #fff;
+  @include flex(flex, center, center);
+}
+
+.cir-7:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-8 {
@@ -460,6 +606,16 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 7;
+  color: #fff;
+  @include flex(flex, center, center);
+}
+
+.cir-8:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-9 {
@@ -472,6 +628,16 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 6;
+  color: #fff;
+  @include flex(flex, center, center);
+}
+
+.cir-9:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .cir-10 {
@@ -484,7 +650,11 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 5;
+
 }
+
+
 
 .rect-2 {
 
@@ -496,6 +666,15 @@
   position: absolute;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 4;
+
+}
+
+.rect-2:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .plus {
@@ -507,6 +686,15 @@
   position: absolute;
   z-index: 1;
   background-color: #3d3f4a;
+  z-index: 3;
+
+}
+
+.plus:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
 }
 
 .plus-1 {
@@ -519,9 +707,28 @@
   z-index: 0;
   background-color: #3d3f4a;
   box-shadow: 2px 3px 1px 0px rgb(102, 102, 102);
+  z-index: 2;
+
 }
 
+.plus-1:active {
+
+  transition: 0.2s;
+  box-shadow: 0 5px rgb(102, 102, 102);
+  transform: translate(5px 5px);
+}
+
+//---------------------------------------------------------------
 
 
+.next {
 
-
+  width: 100vw;
+  height: 90vh;
+  color: #fff;
+  position: absolute;
+  margin-bottom: -310vh;
+  font-size: 10vw;
+  font-family: 'Yuji Boku', serif;
+  @include flex(flex, center, center);
+}
