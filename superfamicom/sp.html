@@ -46,15 +46,14 @@
         <!------------------------------------------------------------>
 
         <div class="nintendo"></div>
-        <div class="famicom"></div>
         <div class="super"></div>
+        <div class="famicom"></div>
       </div>
     </div>
-<link rel="stylesheet" href="./pic/superlogo.png">
-    <!------------------------------------------------------------>
 
+    <!------------------------------------------------------------>
+    <h1 class=""></h1>
     <div class="swi"></div>
-    <!-- <div class="wifi"></div> -->
     <div class="body-1">
       <div class="body-2"></div>
     </div>
@@ -79,7 +78,8 @@
       <div class="plus"></div>
       <div class="plus-1"></div>
     </div>
-    <div class="next">次のコンソールは？</div>
+    <div class="next">ゲームはいいです</div>
+    <div class="next1">次のコンソールは？</div>
   </div>
 
   <script>
@@ -105,6 +105,30 @@
 
       next.animate(move1, move2);
     }, 1500);
+
+    const next1 = document.querySelector('.next1');
+    const moving = next1.children;
+    let move3 = [{
+        transform: 'translateY(-40px)'
+      },
+      {
+        transform: 'translateY(10px)'
+      },
+      {
+        transform: 'translateY(-40px)'
+      }
+    ];
+
+    let move4 = {
+      duration: 1500,
+      interations: Infinity
+    };
+
+    setInterval(() => {
+
+      next1.animate(move3, move4);
+    }, 1500);
+
 
     //-----------------------------------------------------------
     const root = document.getElementById('root');
@@ -134,7 +158,7 @@
         famicom.style.opacity = "1";
 
         console.log(light);
-        
+
       }
     });
 
@@ -158,10 +182,9 @@
         swi.style.transition = "1s";
 
         console.log(light);
-        
+
       }
     });
-
   </script>
 </body>
 
