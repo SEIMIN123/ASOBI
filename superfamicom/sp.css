@@ -1036,8 +1036,8 @@
     background-repeat: no-repeat;
   }
   #root .famicom {
-    width: 55vw;
-    height: 35vh;
+    width: 80vw;
+    height: 50vh;
     position: absolute;
     margin-bottom: -90vh;
     background: url(../superfamicom/pic/superlogo.png);
